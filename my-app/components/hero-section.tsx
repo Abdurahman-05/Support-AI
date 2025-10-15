@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="bg-background py-20 lg:py-28">
+    <section className="bg-background py-20 lg:py-24">
       <div className="container mx-auto px-4">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="grid  gap-12 lg:grid-cols-2 px-4 md:px-0">
           <div className="space-y-6">
             <h1 className="text-balance text-5xl font-bold leading-tight tracking-tight lg:text-6xl">
-              Your Smart <span className="text-primary">24/7</span>
+              Your Smart <span className="text-primary font-ex">24/7</span>
               <br />
               Support Assistant
             </h1>

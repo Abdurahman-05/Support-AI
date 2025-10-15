@@ -78,14 +78,14 @@ import { Checkbox } from "@/components/ui/checkbox"
 
 export default function SignUpPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
       <div className="w-full max-w-6xl bg-white rounded-2xl shadow-xl overflow-hidden flex">
         {/* Left side - Form */}
-        <div className="flex-1 flex items-center justify-center px-8 py-12">
-          <div className="w-full max-w-md space-y-8">
+        <div className="flex-1 flex items-center justify-center px-6 py-8">
+          <div className="w-full max-w-md space-y-5">
             <div className="space-y-4 text-center">
               <div className="mx-auto w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <MessageSquare className="w-6 h-6 text-white" />
+                <MessageSquare className="w-4 h-4 text-white" />
               </div>
               <div>
                 <h1 className="text-3xl font-bold">Create Account</h1>
@@ -96,19 +96,19 @@ export default function SignUpPage() {
             <form className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="name">Full Name</Label>
-                <Input id="name" type="text" placeholder="Full Name" className="h-12" />
+                <Input id="name" type="text" placeholder="Full Name" className="h-10" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="Email" className="h-12" />
+                <Input id="email" type="email" placeholder="Email" className="h-10" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="password">Password</Label>
-                <Input id="password" type="password" placeholder="Password" className="h-12" />
+                <Input id="password" type="password" placeholder="Password" className="h-10" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="confirm-password">Confirm Password</Label>
-                <Input id="confirm-password" type="password" placeholder="Confirm Password" className="h-12" />
+                <Input id="confirm-password" type="password" placeholder="Confirm Password" className="h-10" />
               </div>
               <div className="flex items-center space-x-2">
                 <Checkbox id="terms" />
@@ -141,10 +141,10 @@ export default function SignUpPage() {
         </div>
 
         {/* Right side - Image */}
-        <div className="hidden lg:flex flex-1 bg-gradient-to-br from-blue-50 to-blue-100 items-center justify-center p-12">
-          <div className="relative w-full h-full max-w-2xl max-h-[600px]">
+        <div className="hidden lg:flex flex-1 bg-gradient-to-br from-blue-50 to-blue-100 items-center justify-center">
+          <div className="relative w-full h-full max-w-2xl ">
             <Image
-              src="/graident-ai-robot-vectorart_78370-4114.jpg"
+              src="/chat.webp"
               alt="AI Assistant"
               fill
               className="w-full h-full"

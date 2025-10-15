@@ -10,7 +10,8 @@ export function CtaSection() {
         <p className="mb-8 text-pretty text-lg text-muted-foreground">
           Experience the power of AI-driven customer service. Sign up today and start providing exceptional support.
         </p>
-        <Button size="lg" className="text-base">
+        <Button size="lg" className="text-base  transform transition duration-300 ease-in-out 
+  hover:scale-110">
           Get Started Today
         </Button>
       </div>
