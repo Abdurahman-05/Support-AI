@@ -144,7 +144,7 @@ export default function SignUpPage() {
         <div className="hidden lg:flex flex-1 bg-gradient-to-br from-blue-50 to-blue-100 items-center justify-center">
           <div className="relative w-full h-full max-w-2xl ">
             <Image
-              src="/chat.webp"
+              src="https://res.cloudinary.com/djjasfjpr/image/upload/v1760524874/chat-bot_zljihl.webp"
               alt="AI Assistant"
               fill
               className="w-full h-full"
