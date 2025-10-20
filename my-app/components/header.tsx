@@ -20,7 +20,7 @@ export function Header() {
                         <Link href="#features" className="text-md font-semibold text-foreground hover:text-primary">
                             Features
                         </Link>
-                        <Link href="#pricing" className="text-md font-semibold text-foreground hover:text-primary">
+                        <Link href="/pricing" className="text-md font-semibold text-foreground hover:text-primary">
                             Pricing
                         </Link>
                         <Link href="#contact" className="text-md font-semibold text-foreground hover:text-primary">
@@ -28,10 +28,14 @@ export function Header() {
                         </Link>
                     </nav>
                     <div className="flex items-center gap-3">
-                        <Button variant="ghost" size="sm">
-                            Login
-                        </Button>
-                        <Button size="sm">Sign Up</Button>
+                        <Link href="/login">
+                            <Button variant="ghost" size="sm" >
+                                Login
+                            </Button>
+                        </Link>
+                        <Link href="/signup">
+                            <Button size="sm">Sign Up</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

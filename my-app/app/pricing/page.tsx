@@ -8,7 +8,7 @@ export default function PricingPage() {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-10">
         {/* Hero Section */}
         <div className="mb-16 text-center">
           <h1 className="mb-4 text-5xl font-bold leading-tight text-balance">Choose the plan that's right for you</h1>
@@ -18,7 +18,7 @@ export default function PricingPage() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
           {/* Free Plan */}
           <Card className="relative flex flex-col">
             <CardHeader>
