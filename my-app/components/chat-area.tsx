@@ -27,19 +27,19 @@ export function ChatArea({ isOpen, onToggle }: ChatSidebarProps) {
       id: "1",
       role: "assistant",
       content: "Hello! How can I help you today?",
-      avatar: "🤖",
+      avatar: "/bot.jpg",
     },
     {
       id: "2",
       role: "user",
       content: "Hi, I'm having trouble with my account.",
-      avatar: "👤",
+      avatar: "/user.jpg",
     },
     {
       id: "3",
       role: "assistant",
       content: "I understand. Can you please provide more details about the issue you're experiencing?",
-      avatar: "🤖",
+      avatar: "/bot.jpg",
     },
   ])
 
@@ -51,7 +51,7 @@ export function ChatArea({ isOpen, onToggle }: ChatSidebarProps) {
         id: Date.now().toString(),
         role: "user",
         content: input,
-        avatar: "👤",
+        avatar: "/user.jpg",
       }
       setMessages([...messages, newMessage])
       setInput("")
@@ -61,7 +61,7 @@ export function ChatArea({ isOpen, onToggle }: ChatSidebarProps) {
           id: (Date.now() + 1).toString(),
           role: "assistant",
           content: "Thank you for providing that information. How else can I assist you?",
-          avatar: "🤖",
+          avatar: "/bot.jpg",
         }
         setMessages((prev) => [...prev, aiResponse])
       }, 500)
@@ -69,14 +69,14 @@ export function ChatArea({ isOpen, onToggle }: ChatSidebarProps) {
   }
 
   return (
-    <div className="flex-1 flex flex-col overflow-hidden">
+    <div className="flex-1 flex flex-col overflow-hidden ">
 
 
       {
         isOpen ?
           <span className={`text-xl font-bold pl-2 py-3 border-b-1`}>
             <button className="flex" onClick={onToggle}>
-              <img className="h-5 w-5 justify-center items-center bg-primary " src='sidebar.png' />
+              <img className="h-5 w-5 justify-center items-center " src='sidebar1.png' />
             </button >
           </span>
           :

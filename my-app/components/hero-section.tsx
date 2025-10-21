@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -12,14 +13,20 @@ export function HeroSection() {
               Support Assistant
             </h1>
             <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
-              Enhance your customer service with our AI-powered chatbot. Provide instant, accurate support around the
-              clock, improving customer satisfaction and reducing response times.
+              Enhance your customer service with our AI-powered chatbot. Provide
+              instant, accurate support around the clock, improving customer
+              satisfaction and reducing response times.
             </p>
             <div>
-              <Button size="lg" className="text-base  transform transition duration-300 ease-in-out 
-  hover:scale-110">
-                Get Started for Free
-              </Button>
+              <Link href="/chat">
+                <Button
+                  size="lg"
+                  className="text-base  transform transition duration-300 ease-in-out 
+  hover:scale-110"
+                >
+                  Get Started for Free
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center">
@@ -34,5 +41,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
