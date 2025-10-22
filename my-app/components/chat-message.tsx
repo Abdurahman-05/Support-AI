@@ -48,7 +48,7 @@ export function ChatMessage({ message }: ChatMessageProps) {
               : "bg-secondary text-foreground rounded-tl-none"
           }`}
         >
-          <p className="text-sm leading-relaxed">{message.content}</p>
+          {/* <p className="text-sm leading-relaxed">{message.content}</p> */}
         </div>
       </div>
     </div>
